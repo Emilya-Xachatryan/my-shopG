@@ -1,0 +1,99 @@
+/* Container */
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  gap: 15px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.register:hover {
+  transform: translateY(-3px);
+}
+
+.register h2 {
+  margin-bottom: 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input fields */
+input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Button */
+button {
+  padding: 12px;
+  background: linear-gradient(90deg, #4d4f51, #000000);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #000000, #313333);
+  transform: translateY(-2px);
+}
+
+
+.nickeImg {
+  width: 150px;          /* Հիմնական չափսը */
+  height: 150px;
+  border-radius: 50%;    /* Շրջանաձև կերտ */
+  object-fit: cover;     /* Նկարը ճիշտ կտրամադրվի */
+  margin-left: 200px;
+  margin-top: -500px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.nickeImg:hover {
+  transform: scale(1.1) rotate(5deg); /* Մեծացում և թեքում */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.nickeImg3{
+  width: 150px;          /* Հիմնական չափսը */
+  height: 150px;
+  border-radius: 50%;    /* Շրջանաձև կերտ */
+  object-fit: cover;     /* Նկարը ճիշտ կտրամադրվի */
+  margin-left: 20px;
+  margin-top: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.nickeImg3:hover {
+  transform: scale(1.1) rotate(5deg); /* Մեծացում և թեքում */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+/* Responsive */
+@media (max-width: 400px) {
+  .register {
+    width: 90%;
+    padding: 20px;
+  }
+}

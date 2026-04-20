@@ -1,0 +1,23 @@
+/* LIGHT */
+body {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+/* DARK */
+body.dark {
+  background: #121212;
+  color: rgb(220, 220, 220);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+

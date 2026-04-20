@@ -1,0 +1,152 @@
+.container {
+  padding: 40px;
+}
+
+.backBtn {
+  margin-bottom: 40px;
+  padding: 8px 15px;
+  border: none;
+  background: #555;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* PRODUCT */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+}
+
+.left {
+  flex: 1;
+}
+
+.left h2 {
+  font-size: 32px;
+}
+
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.addBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.right img {
+  width: 300px;
+}
+
+/* THUMBNAILS */
+.thumbnails {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+}
+
+.active {
+  border: 2px solid white;
+  opacity: 1;
+}
+
+/* COMMENTS */
+.comments {
+  margin-top: 50px;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputWrapper input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.inputWrapper button {
+  padding: 10px 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* LIST */
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CARD */
+.commentCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 10px;
+  width: fit-content;
+
+  animation: fadeSlide 0.5s ease forwards;
+}
+
+.commentCard img {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.commentCard p {
+  margin: 0;
+  color: #111;
+}
+
+/* ANIMATION */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
