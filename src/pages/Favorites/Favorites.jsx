@@ -15,7 +15,7 @@ export default function Favorites() {
         <div className={styles.grid}>
           {favorites.map((item) => (
             <div key={item.id} className={styles.card}>
-              <img src={item.variants[0].image} />
+              <img src={item.variants[0].image} alt="product" />
               <h4>{item.title}</h4>
               <span>${item.price}</span>
 

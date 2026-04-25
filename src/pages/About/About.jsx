@@ -93,6 +93,7 @@ export default function About() {
         <iframe
           src="https://www.google.com/maps?q=New York&output=embed"
           loading="lazy" 
+          title="map"
         />
       </section>
 

@@ -73,6 +73,7 @@ function Cart() {
                 {/* PRICE */}
                 <p className={styles.price}>
                   ${item.price * (item.quantity || 1)}
+                  <p>Total: {total}</p>
                 </p>
 
                 {/* QUANTITY */}
