@@ -150,3 +150,58 @@
     transform: translateY(0) scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .addBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .thumbnails {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .commentCard {
+    width: 100%;
+  }
+
+  .inputWrapper {
+    flex-direction: column;
+  }
+
+  .inputWrapper button {
+    width: 100%;
+  }
+}

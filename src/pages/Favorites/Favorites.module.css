@@ -109,3 +109,52 @@ h2 {
     transform: translateY(0);
   }
 }
+
+
+/* ====== LARGE SCREENS (default) ====== */
+/* արդեն ունես 4 column */
+
+/* ====== TABLET (1024px ↓) ====== */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    padding: 40px;
+  }
+}
+
+/* ====== SMALL TABLET (768px ↓) ====== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+}
+
+/* ====== MOBILE (480px ↓) ====== */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
