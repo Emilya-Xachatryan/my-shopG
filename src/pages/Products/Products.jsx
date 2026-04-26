@@ -19,10 +19,13 @@ function Products() {
 
   // Loading simulation
   useEffect(() => {
+    setLoading(true);
+
     const timer = setTimeout(() => {
       setFiltered(products);
       setLoading(false);
-    }, 800);
+    }, 1200);
+
     return () => clearTimeout(timer);
   }, []);
 
