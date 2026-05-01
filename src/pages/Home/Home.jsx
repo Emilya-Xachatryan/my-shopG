@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
-
+import hero from '../../assets/image/hero.png'
+import hero2 from '../../assets/image/hero2.png'
 function Home() {
   const [showAd, setShowAd] = useState(true);
 
@@ -79,7 +80,7 @@ function Home() {
         </div>
 
         <img
-          src="https://i.pinimg.com/1200x/11/54/0f/11540f76429ab090c8e84c99171ca083.jpg"
+          src={hero}
           alt="collection"
         />
       </section>
@@ -87,7 +88,7 @@ function Home() {
       {/* SECTION 3 */}
       <section className={styles.sectionReverse}>
         <img
-          src="https://i.pinimg.com/736x/e8/69/2d/e8692d03fa33e317441520562d39e61d.jpg"
+          src={hero2}
           alt="fashion"
         />
 

@@ -11,22 +11,47 @@
   gap: 30px;
 }
 
-h3 {
+/* կարևոր է, որ target անենք միայն container-ի ներսի h3 */
+.container h3 {
   color: white;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
-p {
+/* սա փոխարինում է p-ին */
+.container a {
+  display: block;
   margin: 5px 0;
-  cursor: pointer;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-p:hover {
+/* hover */
+.container a:hover {
   color: white;
+  padding-left: 5px;
 }
 
+/* copyright */
 .copy {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+}
+
+.container a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.3s;
+}
+
+.container a:hover::after {
+  width: 100%;
 }
